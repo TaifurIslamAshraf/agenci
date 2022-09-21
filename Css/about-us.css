@@ -71,7 +71,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5% 3%;
+  padding: 5% 2%;
 }
 .overview-container .overview__text {
   margin-right: 20px;
@@ -243,6 +243,12 @@ body {
   }
 }
 
+@media screen and (max-width: 1300px) {
+  .overview-container .overview__text h1 {
+    font-size: 35px;
+  }
+}
+
 @media screen and (max-width: 1115px) {
   .overview-container .overview__text {
     padding: 10px 0;
@@ -275,6 +281,10 @@ body {
 }
 
 @media screen and (max-width: 1040px) {
+  .overview-container .overview__text h1 {
+    font-size: 30px;
+  }
+
   /* team member */
   .team__img__text {
     bottom: -36px;
@@ -456,8 +466,12 @@ body {
       url(/image/overview.png) no-repeat center center / cover;
   }
   .overview-container h1 {
-    font-size: 1.5rem;
     margin-bottom: 10px;
+    text-align: start;
+  }
+  .overview-container .overview__text h1 {
+    font-size: 1.3rem;
+    color: #fff;
   }
   .overview-container p {
     text-align: start;
@@ -478,6 +492,19 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+  .about-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about__hero__text {
+    margin-bottom: 20px;
+  }
+  about__hero__btn {
+    margin-top: 20px;
+  }
+
   .about-hero .about__hero__text h2 {
     font-size: 1.2rem;
   }
@@ -503,19 +530,6 @@ body {
   }
   .about-hero .about__hero__text h6 {
     font-size: 0.9rem;
-  }
-
-  .about-hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .about__hero__text {
-    margin-bottom: 20px;
-  }
-  about__hero__btn {
-    margin-top: 20px;
   }
 
   .team__text h1 {

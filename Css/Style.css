@@ -157,7 +157,7 @@ a {
 /*------------- hero start -----------*/
 .hero-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: auto;
   width: 100%;
@@ -443,7 +443,7 @@ a {
   background-color: #197278;
   color: #ffffff;
   padding: 10px;
-  box-shadow: rgb(25 114 120 / 94%) 0px 1px 25px;
+  box-shadow: rgb(0 114 120 / 94%) 0px 1px 25px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -491,11 +491,15 @@ a {
   margin: 15px;
   background-color: #ffffff;
   border-radius: 10px;
-
+  transition: 0.3s;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 .service-container .service__card h3 {
   margin: 5px 0;
@@ -540,7 +544,7 @@ a {
   justify-content: center;
   align-items: center;
   border: 1px solid #197278;
-  padding: 10px;
+  padding: 40px 10px;
   margin: 4% 0%;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -678,10 +682,10 @@ a {
   -webkit-backdrop-filter: blur(5px);
 }
 .work-container .work h1 {
-  font-size: 1.7rem;
+  font-size: 36px;
 }
 .work-container .work h2 {
-  font-size: 1.2rem;
+  font-size: 30px;
 }
 /*------------- Our Work end -----------*/
 
@@ -761,7 +765,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2%;
+  padding: 4% 2%;
 }
 .pricing-container .pricing__main .pricing__cards p {
   font-size: 18px;
@@ -789,7 +793,7 @@ a {
 .pricing-container .pricing__main .pricing__card {
   background-color: #ffffff;
   padding: 2% 1%;
-  margin: 20px 10px;
+  margin: 20px 15px;
   width: 270px;
   height: 450px;
   border-radius: 10px;
@@ -983,7 +987,7 @@ a {
   text-align: start;
 }
 .footer-container .main__footer .footer__logo img {
-  width: 60%;
+  width: 40%;
 }
 .footer-container .footer__logo p {
   color: #222222;
@@ -1017,10 +1021,7 @@ a {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
 }
-.footer-container .company__footer ul li a:hover {
-  color: #ffffff;
-  background-color: #197278;
-}
+
 .footer-container .footer__support {
   display: flex;
   align-items: center;
@@ -1048,10 +1049,6 @@ a {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
-}
-.footer-container .footer__support ul li a:hover {
-  color: #ffffff;
-  background-color: #197278;
 }
 
 .footer-container .footer__subscribe {
@@ -1197,6 +1194,13 @@ a {
     top: 0;
   }
 }
+@media screen and (max-width: 2499px) {
+  .home-about-image .user-photos {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+  }
+}
 
 @media screen and (max-width: 1700px) {
   .container {
@@ -1214,17 +1218,38 @@ a {
     z-index: 10;
     top: 0;
   }
+
+  .home-about-image .user-photos {
+    position: absolute;
+    top: 35%;
+    left: 37%;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .home-about-image .user-photos {
+    position: absolute;
+    top: 35%;
+    left: 34%;
+  }
 }
 
 @media screen and (max-width: 1230px) {
-  .service-container .service__cards .service__card {
-    width: auto;
-    height: auto;
-  }
   .hero-bg img {
     position: absolute;
     left: 200px;
     top: 10px;
+  }
+
+  .home-about-image .user-photos {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+  }
+
+  .service-container .service__cards .service__card {
+    width: auto;
+    height: auto;
   }
 }
 
@@ -1389,6 +1414,12 @@ a {
   .work-container .work {
     width: 210px;
     height: 200px;
+  }
+  .work-container .work h1 {
+    font-size: 1.7rem;
+  }
+  .work-container .work h2 {
+    font-size: 1.2rem;
   }
 
   .pricing-container .pricing__main .pricing__cards {

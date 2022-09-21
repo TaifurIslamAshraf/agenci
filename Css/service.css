@@ -10,3 +10,12 @@
 .serivce-hero {
   background-image: url("/image/service\ hero\ bg.png");
 }
+
+@media screen and (max-width: 460px) {
+  .serivce-hero .serivce-hero-text h2 {
+    font-size: 25px;
+  }
+  .service__header h1 {
+    font-size: 35px;
+  }
+}
